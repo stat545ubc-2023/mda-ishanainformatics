@@ -555,10 +555,6 @@ VanTrees_tbl %>%
 
 ![](mini_data_analysis_files/figure-gfm/stacked%20histogram%20of%20tree%20genera%20surrounding%20VGH%20area-1.png)<!-- -->
 
-``` r
-ggsave("Genera of trees surrounding the VGH area.png", height = 7, width = 10)
-```
-
 According to the data, in general, the deciduous Acer (aka Maple) trees
 appear to predominate around the VGH area. For each major street, other
 common genera present are Ulmus (at W 10th Ave), Fagus (W 10th, W 12th),
@@ -614,10 +610,6 @@ VanTrees4BoxPlot %>%
 ```
 
 ![](mini_data_analysis_files/figure-gfm/plot%20of%20the%20distribution%20of%20Acer%20trees%20around%20VGH-1.png)<!-- -->
-
-``` r
-ggsave("Distribution of Acer trees surrounding the VGH area.png", height = 8, width = 10)
-```
 
 According to this further insight on Acer trees, Red Maple trees,
 particularly on W 12th Av, are the most common trees found in the VGH
