@@ -605,7 +605,7 @@ VanTrees4BoxPlot %>%
   labs(y = "Average count",
        x = "Type of Acer tree",
        title = "Distribution of Acer trees surrounding the VGH area") +
-  scale_fill_discrete(name = "street") +
+  scale_fill_discrete(name = "street") + # line not working
   theme_classic() +
   theme(plot.title = element_text(hjust = 0.5)) +
   theme(axis.text.x = element_text(angle = 70, vjust = 1, hjust=1))
