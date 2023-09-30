@@ -8,4 +8,5 @@ This project aims to explore a dataset collected by The City of Vancouver's Open
 | File name | Details |
 | --- | --- |
 | README.md | Markdown file summarizing the purpose and goals of the project, as well as short descriptions of the files contained within the repository |
-| 
+| mini_data_analysis.Rmd | |
+| mini_data_analysis.Md | |
