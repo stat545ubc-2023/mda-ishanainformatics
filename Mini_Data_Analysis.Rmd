@@ -209,7 +209,7 @@ glimpse(vancouver_trees) # data contains 146,611 rows and 20 columns
 ```
 
 ## Filter the data
-Specifying the streets enclosing the Vancouver Coastal Health medical campus which includes the hospital as well as nearby medical/research buildings (i.e., Vancouver Prostate Centre - my lab!)
+Specifying the streets enclosing the Vancouver Coastal Health medical campus which includes the hospital as well as nearby medical/research buildings (i.e., Vancouver Prostate Centre - my lab!).
 ```{r filter the data}
 # Here I am specifying the neighbourhood VGH is located in, as well as the streets surrounding the medical campus (and making sure the trees are actually planted on those streets according to the 'on_street' variable)
 
@@ -221,7 +221,7 @@ FiltVanTrees <- vancouver_trees %>%
 ```
 
 ## Create tibble with subsetted data of interest
-The variables I am interested in for this analysis are street and genus names
+The variables I am interested in for this analysis are street and genus names.
 ```{r create tibble with subsetted data of interest}
 
 VanTrees_tbl <- FiltVanTrees %>%
@@ -230,7 +230,7 @@ VanTrees_tbl <- FiltVanTrees %>%
 ```
 
 ## Generate barplot of genera surrounding the VGH area
-Here a stacked bar chart (technically histogram) is appropriate to illustrate frequency (via counts) of genera situated at the major streets around the VGH area
+Here a stacked bar chart (technically histogram) is appropriate to illustrate frequency (via counts) of genera situated at the major streets around the VGH area.
 ```{r stacked histogram of tree genera surrounding VGH area}
 
 VanTrees_tbl %>%
