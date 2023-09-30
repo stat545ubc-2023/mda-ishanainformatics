@@ -194,6 +194,7 @@ Below you will find my processing pipeline of this dataset using the _tidyverse_
 
 ## Load libraries
 ```{r load libraries}
+# (hashed because already loaded at beginning of document)
 
 #library(datateachr)
 #library(tidyverse)
@@ -291,7 +292,7 @@ According to this further insight on Acer trees, Red Maple trees, particularly o
 ![Enjoy this picture of a Red Maple!](https://plants.gardenworks.ca/Content/Images/Photos/J144-16.jpg)
 
 ## Further Research  
-1. Over a period of time, which trees were planted the most and on which street(s) in the VGH area? Was there a specific period where one tree was predominately planted?
+1. Over a period of time, which trees were planted the most and on which street(s) in the VGH area? Was there a specific period where one tree was predominately planted?  
     * Upon first glance there are quite a few NA observations for date planted - I can first graph how many missing values there are for this variable.
 2. What is the distribution of tree height around VGH?
 3. What is the distribution of tree diameter around VGH?

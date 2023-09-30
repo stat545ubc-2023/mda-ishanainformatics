@@ -465,6 +465,8 @@ visualization section involving the *dplyr* and *ggplot2* packages.
 ## Load libraries
 
 ``` r
+# (hashed because already loaded at beginning of document)
+
 #library(datateachr)
 #library(tidyverse)
 #library(devtools)
