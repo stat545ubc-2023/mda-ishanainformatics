@@ -26,5 +26,5 @@ The code from this repository can be run either via downloading or cloning:
 2. **Downloading**
      * Press the Code button at the right of the repository and select Download ZIP in the dropdown.
        * You should find the repository downloaded to your local computer as a zipped file.  
-     * Specific files can be downloaded by selecting a desired file followed by Raw option at the right of your screen.
-     * Once the raw code opens in a new tab on your browser, downloaded the contents by right-clicking the page and selecting Save As.
+     * Specific files can be downloaded by selecting a desired file followed by the Raw option at the right of your screen.
+     * Once the raw code opens in a new tab on your browser, download the contents by right-clicking the page and selecting Save As.
