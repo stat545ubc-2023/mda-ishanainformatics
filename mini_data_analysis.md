@@ -421,18 +421,21 @@ sufficient comments for a reader to understand your reasoning and code.
 
 <!-------------------------- Start your work below ---------------------------->
 
-Exercise 5: I needed to filter the dataset to only include the streets
-within the VGH area and to specify data collected for the Fairview
-neighbourhood (where the hospital is).  
-Exercise 7: I created a new tibble including only the street and genera
-names as the variables, and the relevant street name observations to my
-question.  
-Exercise 4: I plotted a stacked bar chart describing which genera of
+**Exercise 5**: I needed to filter the dataset to only include the
+streets within the VGH area and to specify data collected for the
+Fairview neighbourhood (where the hospital is).  
+**Exercise 7**: I created a new tibble including only the street and
+genera names as the variables, and the relevant street name observations
+to my question.  
+**Exercise 4**: I plotted a stacked bar chart describing which genera of
 trees are planted around VGH.  
-Exercise 6: To further investigate the diversity of Acer trees around
-VGH, I generated a boxplot describing the frequency of the different
-types of Acer trees while also specifying with an overlaid jitter plot,
-how many counts were from each of the four major streets.
+**Exercise 6**: To further investigate the diversity of Acer trees
+around VGH, I generated a boxplot describing the frequency of the
+different types of Acer trees while also specifying with an overlaid
+jitter plot, how many counts were from each of the four major streets.  
+- This objective also involves **Exercise 2** as a new variable
+recording the average count of a particular Maple tree across the four
+streets was generated.
 
 <!----------------------------------------------------------------------------->
 
@@ -555,7 +558,7 @@ VanTrees_tbl %>%
     ## Warning in geom_histogram(stat = "count"): Ignoring unknown parameters:
     ## `binwidth`, `bins`, and `pad`
 
-![](mini_data_analysis_files/figure-gfm/stacked%20histogram%20of%20tree%20genera%20surrounding%20VGH%20area-1.png)<!-- -->
+![](mini_data_analysis_files/figure-gfm/Genera%20of%20trees%20surrounding%20the%20VGH%20area-1.png)<!-- -->
 
 According to the data, in general, the deciduous Acer (aka Maple) trees
 appear to predominate around the VGH area. For each major street, other
@@ -572,12 +575,12 @@ the major streets (W 10th, W 12th, Ash, Oak).
 
 ### Further subset the data
 
-To determine the distribution of Maple trees within the major streets,
-the data can be further subsetted into a new tibble where only trees
-under the Acer genus are retained and count summaries are made based on
-common name and linking the tree to the street it was recorded on.
-Further, a new variable can be made averaging the count of a particular
-Maple tree across the four streets.
+To determine the distribution of Maple trees across the major streets,
+the data can be further subsetted into a new tibble in which genus is
+filtered for Acer trees. From here, count summaries can be made for each
+of the common names that fall under Acer, with the tree linked to the
+street it was recorded on. Further, a new variable can be made which
+averages the count of a particular Maple tree across the four streets.
 
 ``` r
 VanTrees4BoxPlot <- FiltVanTrees %>%
@@ -611,7 +614,7 @@ VanTrees4BoxPlot %>%
   theme(axis.text.x = element_text(angle = 70, vjust = 1, hjust=1))
 ```
 
-![](mini_data_analysis_files/figure-gfm/plot%20of%20the%20distribution%20of%20Acer%20trees%20around%20VGH-1.png)<!-- -->
+![](mini_data_analysis_files/figure-gfm/Distribution%20of%20Acer%20trees%20surrounding%20the%20VGH%20area-1.png)<!-- -->
 
 According to this further insight on Acer trees, Red Maple trees,
 particularly on W 12th Av, are the most common trees found in the VGH

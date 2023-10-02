@@ -168,10 +168,11 @@ Make sure that you're using dplyr and ggplot2 rather than base R for this task. 
 
 <!-------------------------- Start your work below ---------------------------->
 
-Exercise 5: I needed to filter the dataset to only include the streets within the VGH area and to specify data collected for the Fairview neighbourhood (where the hospital is).  
-Exercise 7: I created a new tibble including only the street and genera names as the variables, and the relevant street name observations to my question.  
-Exercise 4: I plotted a stacked bar chart describing which genera of trees are planted around VGH.  
-Exercise 6: To further investigate the diversity of Acer trees around VGH, I generated a boxplot describing the frequency of the different types of Acer trees while also specifying with an overlaid jitter plot, how many counts were from each of the four major streets.
+**Exercise 5**: I needed to filter the dataset to only include the streets within the VGH area and to specify data collected for the Fairview neighbourhood (where the hospital is).  
+**Exercise 7**: I created a new tibble including only the street and genera names as the variables, and the relevant street name observations to my question.  
+**Exercise 4**: I plotted a stacked bar chart describing which genera of trees are planted around VGH.  
+**Exercise 6**: To further investigate the diversity of Acer trees around VGH, I generated a boxplot describing the frequency of the different types of Acer trees while also specifying with an overlaid jitter plot, how many counts were from each of the four major streets.  
+- This objective also involves **Exercise 2** as a new variable recording the average count of a particular Maple tree across the four streets was generated.
 
 <!----------------------------------------------------------------------------->
 
@@ -234,7 +235,7 @@ VanTrees_tbl <- FiltVanTrees %>%
 
 ## Generate barplot of genera surrounding the VGH area
 Here a stacked bar chart (technically histogram) is appropriate to illustrate frequency (via counts) of genera situated at the major streets around the VGH area.
-```{r stacked histogram of tree genera surrounding VGH area}
+```{r Genera of trees surrounding the VGH area}
 
 VanTrees_tbl %>%
   ggplot(aes(fill = std_street, x = genus_name)) +
@@ -254,10 +255,10 @@ VanTrees_tbl %>%
 According to the data, in general, the deciduous Acer (aka Maple) trees appear to predominate around the VGH area. For each major street, other common genera present are Ulmus (at W 10th Ave), Fagus (W 10th, W 12th), and Quercus and Fraxinus (Ash St).
 
 ## Investigate the diversity of Acer trees surrounding VGH 
-Since the genus Acer is still a relatively broad category that encompasses many different types of Maple trees, it is valuable to determine at what frequency we find each of the Maple tree types, as well as identify how many of each Maple tree were recorded at each of the major streets (W 10th, W 12th, Ash, Oak).
+Since the genus Acer is still a relatively broad category that encompasses many different types of Maple trees, it is valuable to determine at what frequency we find each of the Maple tree types, as well as identify how many of each Maple tree were recorded at each of the major streets (W 10th, W 12th, Ash, Oak).  
 
 ### Further subset the data
-To determine the distribution of Maple trees within the major streets, the data can be further subsetted into a new tibble where only trees under the Acer genus are retained and count summaries are made based on common name and linking the tree to the street it was recorded on. Further, a new variable can be made averaging the count of a particular Maple tree across the four streets.
+To determine the distribution of Maple trees across the major streets, the data can be further subsetted into a new tibble in which genus is filtered for Acer trees. From here, count summaries can be made for each of the common names that fall under Acer, with the tree linked to the street it was recorded on. Further, a new variable can be made which averages the count of a particular Maple tree across the four streets.  
 ```{r further subset the data}
 
 VanTrees4BoxPlot <- FiltVanTrees %>%
@@ -270,7 +271,7 @@ VanTrees4BoxPlot <- FiltVanTrees %>%
 
 ### Plot the distribution data
 We can illustrate the average frequency of the different types of Acer trees with a boxplot, while also specifying how many counts belong to each of the four major streets with an overlaid jitter plot.
-```{r plot of the distribution of Acer trees around VGH}
+```{r Distribution of Acer trees surrounding the VGH area}
 
 VanTrees4BoxPlot %>%
   ggplot() +
