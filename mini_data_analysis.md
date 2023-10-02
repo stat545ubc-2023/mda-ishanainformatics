@@ -638,7 +638,7 @@ Maple!</figcaption>
     one tree was predominately planted?
     - Upon first glance there are quite a few NA observations for date
       planted - I can first graph how many missing values there are for
-      this variable.
+      this variable.  
 2.  What is the distribution of tree height around VGH?
 3.  What is the distribution of tree diameter around VGH?
 4.  Which genus of tree has the largest diameter and greatest height?
