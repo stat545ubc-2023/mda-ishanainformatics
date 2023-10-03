@@ -600,7 +600,7 @@ trees with a boxplot, while also specifying how many counts belong to
 each of the four major streets with an overlaid jitter plot.
 
 ``` r
-# since legend was made based on colour aesthetic in geom_jitter, match with scale_colour_discrete to change the legend title
+# since the legend was made based on colour aesthetic in geom_jitter, match with scale_colour_discrete to change the legend title
 
 VanTrees4BoxPlot %>%
   ggplot() +
