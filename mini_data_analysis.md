@@ -429,13 +429,10 @@ genera names as the variables, and the relevant street name observations
 to my question.  
 **Exercise 4**: I plotted a stacked bar chart describing which genera of
 trees are planted around VGH.  
-**Exercise 6**: To further investigate the diversity of Acer trees
-around VGH, I generated a boxplot describing the frequency of the
-different types of Acer trees while also specifying with an overlaid
-jitter plot, how many counts were from each of the four major streets.  
-- This objective also involves **Exercise 2** as a new variable
-recording the average count of a particular Maple tree across the four
-streets was generated.
+**Exercise 2**: To further investigate the diversity of Acer trees around VGH,
+I created a new variable recording the average count of a particular Maple tree
+across the four streets and plotted the results to describe the frequency of the
+different types of Acer trees around VGH.
 
 <!----------------------------------------------------------------------------->
 
@@ -569,17 +566,17 @@ and Quercus and Fraxinus (Ash St).
 
 Since the genus Acer is still a relatively broad category that
 encompasses many different types of Maple trees, it is valuable to
-determine at what frequency we find each of the Maple tree types, as
-well as identify how many of each Maple tree were recorded at each of
-the major streets (W 10th, W 12th, Ash, Oak).
+determine at what frequency we find each of the Maple tree types on
+average, as well as identify how many of each Maple tree were recorded
+at each of the major streets (W 10th, W 12th, Ash, Oak).
 
-### Further subset the data
+### Further subset the data to generate a new variable
 
 To determine the distribution of Maple trees across the major streets,
 the data can be further subsetted into a new tibble in which genus is
 filtered for Acer trees. From here, count summaries can be made for each
 of the common names that fall under Acer, with the tree linked to the
-street it was recorded on. Further, a new variable can be made which
+street it was recorded on. Further, a **new variable** can be made which
 averages the count of a particular Maple tree across the four streets.
 
 ``` r
@@ -596,8 +593,9 @@ VanTrees4BoxPlot <- FiltVanTrees %>%
 ### Plot the distribution data
 
 We can illustrate the average frequency of the different types of Acer
-trees with a boxplot, while also specifying how many counts belong to
-each of the four major streets with an overlaid jitter plot.
+trees, while also specifying how many counts belong to each of the four major streets with an overlaid jitter plot.  
+**PLEASE NOTE** although this code technically uses geom_boxplot to generate the graph for average count, the graph is meant to be read as a barplot/column chart. Perhaps by the way I set up my new variable, I am unable to use the geom_bar or geom_col function as it only tallys the total count of trees whereas geom_boxplot is able to show the average count I calculated.  
+**The main thing** for this part of the analysis is that I created a new variable to address Exercise 2.  
 
 ``` r
 # since the legend was made based on colour aesthetic in geom_jitter, match with scale_colour_discrete to change the legend title
