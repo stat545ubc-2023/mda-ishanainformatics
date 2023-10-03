@@ -273,6 +273,8 @@ VanTrees4BoxPlot <- FiltVanTrees %>%
 We can illustrate the average frequency of the different types of Acer trees with a boxplot, while also specifying how many counts belong to each of the four major streets with an overlaid jitter plot.
 ```{r Distribution of Acer trees surrounding the VGH area}
 
+# since legend was made based on colour aesthetic in geom_jitter, match with scale_colour_discrete to change the legend title
+
 VanTrees4BoxPlot %>%
   ggplot() +
   geom_boxplot(aes(x = common_name, y = avg_count)) +
@@ -281,7 +283,7 @@ VanTrees4BoxPlot %>%
   labs(y = "Average count",
        x = "Type of Acer tree",
        title = "Distribution of Acer trees surrounding the VGH area") +
-  scale_fill_discrete(name = "street") + # line not working
+  scale_colour_discrete(name = "street") + 
   theme_classic() +
   theme(plot.title = element_text(hjust = 0.5)) +
   theme(axis.text.x = element_text(angle = 70, vjust = 1, hjust=1))
