@@ -17,7 +17,7 @@ This project aims to explore a dataset collected by The City of Vancouver's Open
 | Milestone 2 | mini_data_analysis_m2.md | A viewable **.md** version of the **mini_data_analysis_m2.Rmd** file |
 | Milestone 2 | mini_data_analysis_m2_files/figure-gfm | Folder contains the 2 plots generated in **mini_data_analysis_m2.Rmd** and allow for the plots to be viewable in **mini_data_analysis_m2.md** |
 | output | README.md | Summarizes contents of output folder for milestone 2 |
-| output | FiltVanTrees.csv | product of writing FiltVanTrees tibble into a csv file |
+| output | FiltVanTrees.csv | Product of writing FiltVanTrees tibble into a csv file |
 | output | lm_VanTrees.rds | rds file for the linear model produced in milestone 2 |
 
 ## How to run the code provided in this repository?
