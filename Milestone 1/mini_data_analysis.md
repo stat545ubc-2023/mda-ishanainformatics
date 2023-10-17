@@ -633,8 +633,8 @@ the only Acer tree found on Ash St is the October Glory Red Maple
 <figure>
 <img
 src="https://plants.gardenworks.ca/Content/Images/Photos/J144-16.jpg"
-alt="Enjoy this picture of a Red Maple!" />
-<figcaption aria-hidden="true">Enjoy this picture of a Red
+alt="Enjoy this photo of a Red Maple!" />
+<figcaption aria-hidden="true">Enjoy this photo of a Red
 Maple!</figcaption>
 </figure>
 
