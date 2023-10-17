@@ -292,7 +292,7 @@ VanTrees4BoxPlot %>%
 
 ```
 
-According to this further insight on Acer trees, Red Maple trees, particularly on W 12th Av, are the most common trees found in the VGH area. This data also shows that Bowhall and Autumn Blaze Red Maples on W 12th and W 10th, respectively, are also relatively common. In contrast, the only Acer tree found on Ash St is the October Glory Red Maple (fitting for this month!).
+According to this further insight on Acer trees, Red Maple trees, particularly on W 12th Av, are the most common trees found in the VGH area. This data also shows that Bowhall and Northwood Red Maples on W 10th and W 12th, respectively, are also relatively common. In contrast, the only Acer tree found on Ash St is the October Glory Red Maple (fitting for this month!).
 
 ![Enjoy this picture of a Red Maple!](https://plants.gardenworks.ca/Content/Images/Photos/J144-16.jpg)
 

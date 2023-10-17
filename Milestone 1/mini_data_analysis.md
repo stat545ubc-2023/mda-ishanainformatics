@@ -429,10 +429,10 @@ genera names as the variables, and the relevant street name observations
 to my question.  
 **Exercise 4**: I plotted a stacked bar chart describing which genera of
 trees are planted around VGH.  
-**Exercise 2**: To further investigate the diversity of Acer trees around VGH,
-I created a new variable recording the average count of a particular Maple tree
-across the four streets and plotted the results to describe the frequency of the
-different types of Acer trees around VGH.
+**Exercise 2**: To further investigate the diversity of Acer trees
+around VGH, I created a new variable recording the average count of a
+particular Maple tree across the four streets and plotted the results to
+describe the frequency of the different types of Acer trees around VGH.
 
 <!----------------------------------------------------------------------------->
 
@@ -593,9 +593,16 @@ VanTrees4BoxPlot <- FiltVanTrees %>%
 ### Plot the distribution data
 
 We can illustrate the average frequency of the different types of Acer
-trees, while also specifying how many counts belong to each of the four major streets with an overlaid jitter plot.  
-**PLEASE NOTE** although this code technically uses geom_boxplot to generate the graph for average count, the graph is meant to be read as a barplot/column chart. Perhaps by the way I set up my new variable, I am unable to use the geom_bar or geom_col function as it only tallys the total count of trees whereas geom_boxplot is able to show the average count I calculated.  
-**The main thing** for this part of the analysis is that I created a new variable to address Exercise 2.  
+trees, while also specifying how many counts belong to each of the four
+major streets with an overlaid jitter plot.  
+**PLEASE NOTE** although this code technically uses geom_boxplot to
+generate the graph for average count, the graph is meant to be read as a
+barplot/column chart. Perhaps by the way I set up my new variable, I am
+unable to use the geom_bar or geom_col function as it only tallys the
+total count of trees whereas geom_boxplot is able to show the average
+count I calculated.  
+**The main thing** for this part of the analysis is that I created a new
+variable to address Exercise 2.
 
 ``` r
 # since the legend was made based on colour aesthetic in geom_jitter, match with scale_colour_discrete to change the legend title
@@ -618,8 +625,8 @@ VanTrees4BoxPlot %>%
 
 According to this further insight on Acer trees, Red Maple trees,
 particularly on W 12th Av, are the most common trees found in the VGH
-area. This data also shows that Bowhall and Autumn Blaze Red Maples on W
-12th and W 10th, respectively, are also relatively common. In contrast,
+area. This data also shows that Bowhall and Northwood Red Maples on W
+10th and W 12th, respectively, are also relatively common. In contrast,
 the only Acer tree found on Ash St is the October Glory Red Maple
 (fitting for this month!).
 
